@@ -38,6 +38,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_libdir}/xorg/modules/drivers/i128_drv.la
 %{_libdir}/xorg/modules/drivers/i128_drv.so
-%{_mandir}/man4/i128.4.bz2
+%{_mandir}/man4/i128.*
 
 
