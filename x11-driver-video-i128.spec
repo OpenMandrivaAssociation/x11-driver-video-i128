@@ -1,6 +1,6 @@
 Name: x11-driver-video-i128
 Version: 1.2.1
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: The X.org driver for Number Nine chipsets
 Group: System/X11
 URL: http://xorg.freedesktop.org
@@ -22,9 +22,7 @@ The X.org driver for Number Nine chipsets
 %setup -q -n xf86-video-i128-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
-
+%configure
 %make
 
 %install
