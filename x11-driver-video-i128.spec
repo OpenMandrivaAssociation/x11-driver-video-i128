@@ -15,7 +15,7 @@ BuildRequires: x11-util-macros >= 1.0.1
 Conflicts: xorg-x11-server < 7.0
 
 %description
-The X.org driver for Number Nine chipsets
+The X.org driver for Number Nine chipsets.
 
 %prep
 %setup -q -n xf86-video-i128-%{version}
