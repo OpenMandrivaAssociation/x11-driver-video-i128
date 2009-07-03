@@ -1,6 +1,6 @@
 Name: x11-driver-video-i128
-Version: 1.3.1
-Release: %mkrel 3
+Version: 1.3.2
+Release: %mkrel 1
 Summary: X.org driver for Number Nine chipsets
 Group: System/X11
 URL: http://xorg.freedesktop.org
