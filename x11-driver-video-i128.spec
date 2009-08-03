@@ -1,5 +1,5 @@
 Name: x11-driver-video-i128
-Version: 1.3.2
+Version: 1.3.3
 Release: %mkrel 1
 Summary: X.org driver for Number Nine chipsets
 Group: System/X11
@@ -21,7 +21,7 @@ x11-driver-video-i128 is the X.org driver for Number Nine chipsets.
 %setup -q -n xf86-video-i128-%{version}
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
