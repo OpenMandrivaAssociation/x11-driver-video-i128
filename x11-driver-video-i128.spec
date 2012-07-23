@@ -1,5 +1,5 @@
 Name: x11-driver-video-i128
-Version: 1.3.5
+Version: 1.3.6
 Release: 1
 Summary: X.org driver for Number Nine chipsets
 Group: System/X11
