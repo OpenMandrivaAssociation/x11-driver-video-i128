@@ -1,5 +1,5 @@
---- xf86-video-i128-1.3.6/src/i128_driver.c~	2012-07-17 05:21:15.000000000 +0000
-+++ xf86-video-i128-1.3.6/src/i128_driver.c	2013-03-23 23:28:41.766557186 +0000
+--- xf86-video-i128-1.3.6/src/i128_driver.c.0000~	2012-07-17 07:21:15.000000000 +0200
++++ xf86-video-i128-1.3.6/src/i128_driver.c	2013-04-06 02:50:50.435894137 +0200
 @@ -50,8 +50,6 @@
  /* All drivers initialising the SW cursor need this */
  #include "mipointer.h"
@@ -9,3 +9,11 @@
  #include "micmap.h"
  
  #include "xf86DDC.h"
+@@ -1557,7 +1555,6 @@ I128ScreenInit(SCREEN_INIT_ARGS_DECL)
+         return FALSE;
+     }
+     
+-    miInitializeBackingStore(pScreen);
+     xf86SetBackingStore(pScreen);
+     xf86SetSilkenMouse(pScreen);
+ 
