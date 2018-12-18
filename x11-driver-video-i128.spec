@@ -2,13 +2,12 @@
 
 Summary:	X.org driver for Number Nine chipsets
 Name:		x11-driver-video-i128
-Version:	1.3.6
-Release:	18
+Version:	1.4.0
+Release:	1
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-i128-%{version}.tar.bz2
-Patch0:		remove_mibstore_h.patch
 
 BuildRequires:	pkgconfig(xorg-macros)
 BuildRequires:	pkgconfig(xorg-server)
@@ -19,15 +18,14 @@ Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 x11-driver-video-i128 is the X.org driver for Number Nine chipsets.
 
 %prep
-%setup -qn xf86-video-i128-%{version}
-%apply_patches
+%autosetup -n xf86-video-i128-%{version} -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_libdir}/xorg/modules/drivers/i128_drv.so
