@@ -2,12 +2,12 @@
 
 Summary:	X.org driver for Number Nine chipsets
 Name:		x11-driver-video-i128
-Version:	1.4.0
-Release:	3
+Version:	1.4.1
+Release:	1
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-i128-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-i128-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(xorg-macros)
 BuildRequires:	pkgconfig(xorg-server)
